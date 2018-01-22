@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{757ED052-927D-4082-83E0-F110421A39EA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\Bag.cs" />
+    <Compile Include="Collections\IndexMinPQ.cs" />
+    <Compile Include="GraphStructure\BreadthFirstPaths.cs" />
+    <Compile Include="GraphStructure\CC.cs" />
+    <Compile Include="GraphStructure\DepthFirstOrder.cs" />
+    <Compile Include="GraphStructure\DepthFirstPaths.cs" />
+    <Compile Include="GraphStructure\DepthFirstSearch.cs" />
+    <Compile Include="GraphStructure\Digraph.cs" />
+    <Compile Include="GraphStructure\DirectedCycle.cs" />
+    <Compile Include="GraphStructure\DirectedDFS.cs" />
+    <Compile Include="GraphStructure\DirectedEdge.cs" />
+    <Compile Include="GraphStructure\Edge.cs" />
+    <Compile Include="GraphStructure\EdgeWeightedDigraph.cs" />
+    <Compile Include="GraphStructure\EdgeWeightedGraph.cs" />
+    <Compile Include="GraphStructure\Graph.cs" />
+    <Compile Include="GraphStructure\KosarajuSCC.cs" />
+    <Compile Include="GraphStructure\LazyPrimMST.cs" />
+    <Compile Include="GraphStructure\PrimMST.cs" />
+    <Compile Include="GraphStructure\DijkstraSP.cs" />
+    <Compile Include="GraphStructure\SymbolDigraph.cs" />
+    <Compile Include="GraphStructure\SymbolGraph.cs" />
+    <Compile Include="GraphStructure\Topological.cs" />
+    <Compile Include="LeetCode\ContainsDuplicate.cs" />
+    <Compile Include="LeetCode\ExcelSheetColumnNumber.cs" />
+    <Compile Include="LeetCode\ListNode.cs" />
+    <Compile Include="LeetCode\LongestValidParentheses.cs" />
+    <Compile Include="LeetCode\MajorityElement.cs" />
+    <Compile Include="LeetCode\MaxDepth.cs" />
+    <Compile Include="LeetCode\NumberOf1Bits.cs" />
+    <Compile Include="LeetCode\PascalTriangle.cs" />
+    <Compile Include="LeetCode\RemoveDuplicatesfromSortedList2.cs" />
+    <Compile Include="LeetCode\RemoveZeroes.cs" />
+    <Compile Include="LeetCode\SameTree.cs" />
+    <Compile Include="LeetCode\TreeNode.cs" />
+    <Compile Include="LeetCode\ValidAnagram.cs" />
+    <Compile Include="LeetCode\ZigZagConversion.cs" />
+    <Compile Include="Search\BinarySearchST.cs" />
+    <Compile Include="Search\BST.cs" />
+    <Compile Include="Collections\debuggerview.cs" />
+    <Compile Include="Collections\Heap.cs" />
+    <Compile Include="Collections\MaxPQ.cs" />
+    <Compile Include="Collections\MinPQ.cs" />
+    <Compile Include="Common\ExpCalculate.cs" />
+    <Compile Include="HttpClient\HttpListenerDemo.cs" />
+    <Compile Include="HttpClient\SocketDemo.cs" />
+    <Compile Include="HttpClient\TcpDemo.cs" />
+    <Compile Include="Collections\PQTest.cs" />
+    <Compile Include="LeetCode\Pow.cs" />
+    <Compile Include="LeetCode\ReverseWords.cs" />
+    <Compile Include="LeetCode\TwoSum.cs" />
+    <Compile Include="Search\LinearProbingHashST.cs" />
+    <Compile Include="Search\RedBlackBST.cs" />
+    <Compile Include="Search\SeparateChainingHashST.cs" />
+    <Compile Include="Search\SequentialSearchST.cs" />
+    <Compile Include="Sort\Heap.cs" />
+    <Compile Include="Sort\Insertion.cs" />
+    <Compile Include="Sort\Merge.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sort\Quick.cs" />
+    <Compile Include="Common\Search.cs" />
+    <Compile Include="Sort\Selection.cs" />
+    <Compile Include="Sort\ShellSort.cs" />
+    <Compile Include="Sort\SortTemp.cs" />
+    <Compile Include="Common\StopWatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
